@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<ul>
+{{range $key, $ := .Notes}}
+<li><a href="{{$key}}">{{$key}}</a></li>
+{{end}}
+</ul>
+
+<form method="post">
+  <label>Title:
+    <input name="title" />
+  </label>
+  <br>
+  <br>
+  <label>Content:
+    <textarea name="content"></textarea>
+  </label>
+  <button>Submit</button>
+</form>
